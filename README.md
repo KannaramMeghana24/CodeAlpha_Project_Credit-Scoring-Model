@@ -1,11 +1,13 @@
-##Credit Scoring Model
+## Credit Scoring Model
 
-##Introduction
+## Introduction
 Credit scoring is crucial for financial institutions to assess the creditworthiness of individuals. This project utilizes machine learning techniques to predict credit scores based on financial and demographic data.
 The primary goal is to build, evaluate, and compare models for accurate predictions using:
 -Random Forest Classifier
 
-##Dataset
+-----
+
+## Dataset
 The dataset consists of financial and demographic attributes, including:
 Age
 Occupation
@@ -18,12 +20,16 @@ Payment Behavior
 Credit Score (Target Variable)
 The dataset is split into train.csv and test.csv for model training and evaluation.
 
-##Models Used
+-----
+
+## Models Used
 **RandomForestClassifier**:
 -An ensemble method combining multiple decision trees.
 -Provides better generalization and reduces overfitting.
 
-##Project Workflow
+-----
+
+## Project Workflow
 **Data Preprocessing**:
 Dropped unnecessary columns (ID, Customer_ID, Name, SSN, Month).
 Converted numerical columns stored as objects.
@@ -36,11 +42,15 @@ Split the data into training and testing sets.
 Trained the Random Forest Classifier.
 Evaluated performance using metrics like accuracy, precision, recall, F1-score, and ROC-AUC.
 
-##Dependencies
+-----
+
+## Dependencies
 Install the required libraries using the following command:
 pip install -r requirements.txt
 
-##Requirements
+-----
+
+## Requirements
 Python 3.7+
 pandas
 numpy
@@ -48,7 +58,9 @@ scikit-learn
 matplotlib
 seaborn
 
-##How to Run
+-----
+
+## How to Run
 Clone this repository:
 git clone https://github.com/yourusername/credit-scoring-model.git
 cd credit-scoring-model
@@ -62,7 +74,9 @@ or
 python credit_scoring_model.py
 View the evaluation metrics and model comparison in the output.
 
-##Results
+-----
+
+## Results
 The models were evaluated using the following metrics:
 **Accuracy**
 **Precision**
