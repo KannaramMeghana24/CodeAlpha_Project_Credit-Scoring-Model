@@ -2,22 +2,34 @@
 
 ## Introduction
 Credit scoring is crucial for financial institutions to assess the creditworthiness of individuals. This project utilizes machine learning techniques to predict credit scores based on financial and demographic data.
+
 The primary goal is to build, evaluate, and compare models for accurate predictions using:
+
 -Random Forest Classifier
 
 -----
 
 ## Dataset
 The dataset consists of financial and demographic attributes, including:
-Age
-Occupation
-Annual Income
-Monthly In-hand Salary
-Number of Bank Accounts
-Credit Utilization Ratio
-Outstanding Debt
-Payment Behavior
-Credit Score (Target Variable)
+
+-Age
+
+-Occupation
+
+-Annual Income
+
+-Monthly In-hand Salary
+
+-Number of Bank Accounts
+
+-Credit Utilization Ratio
+
+-Outstanding Debt
+
+-Payment Behavior
+
+-Credit Score (Target Variable)
+
 The dataset is split into train.csv and test.csv for model training and evaluation.
 
 -----
