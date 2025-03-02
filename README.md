@@ -37,61 +37,90 @@ The dataset is split into train.csv and test.csv for model training and evaluati
 ## Models Used
 **RandomForestClassifier**:
 -An ensemble method combining multiple decision trees.
+
 -Provides better generalization and reduces overfitting.
 
 -----
 
 ## Project Workflow
 **Data Preprocessing**:
+
 Dropped unnecessary columns (ID, Customer_ID, Name, SSN, Month).
+
 Converted numerical columns stored as objects.
+
 Handled missing values using mode (for categorical) and median (for numerical features).
-Feature Encoding and Scaling:
+
+**Feature Encoding and Scaling**:
+
 Label encoding for categorical variables.
+
 Standard scaling for numerical features.
+
 **Model Training and Evaluation**:
+
 Split the data into training and testing sets.
+
 Trained the Random Forest Classifier.
+
 Evaluated performance using metrics like accuracy, precision, recall, F1-score, and ROC-AUC.
 
 -----
 
 ## Dependencies
 Install the required libraries using the following command:
+
 pip install -r requirements.txt
 
 -----
 
 ## Requirements
 Python 3.7+
+
 pandas
+
 numpy
+
 scikit-learn
+
 matplotlib
+
 seaborn
 
 -----
 
 ## How to Run
 Clone this repository:
+
 git clone https://github.com/yourusername/credit-scoring-model.git
+
 cd credit-scoring-model
 
 Install dependencies:
+
 pip install -r requirements.txt
 
 Run the Jupyter Notebook or Python script:
+
 jupyter notebook "Credit Scoring Model.ipynb"
+
 or
+
 python credit_scoring_model.py
+
 View the evaluation metrics and model comparison in the output.
 
 -----
 
 ## Results
 The models were evaluated using the following metrics:
+
 **Accuracy**
+
 **Precision**
+
 **Recall**
+
 **F1-score**
+
 **ROC-AUC**
