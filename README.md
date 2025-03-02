@@ -89,28 +89,6 @@ seaborn
 
 -----
 
-## How to Run
-Clone this repository:
-
-git clone https://github.com/yourusername/credit-scoring-model.git
-
-cd credit-scoring-model
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-Run the Jupyter Notebook or Python script:
-
-jupyter notebook "Credit Scoring Model.ipynb"
-
-or
-
-python credit_scoring_model.py
-
-View the evaluation metrics and model comparison in the output.
-
------
 
 ## Results
 The models were evaluated using the following metrics:
