@@ -1,103 +1,71 @@
-Credit Scoring Model
+##Credit Scoring Model
 
-Overview
+##Introduction
+Credit scoring is crucial for financial institutions to assess the creditworthiness of individuals. This project utilizes machine learning techniques to predict credit scores based on financial and demographic data.
+The primary goal is to build, evaluate, and compare models for accurate predictions using:
+-Random Forest Classifier
 
-This repository contains a Credit Scoring Model that classifies individuals based on their creditworthiness. The model utilizes machine learning techniques, specifically a Random Forest Classifier, to predict credit scores and assess financial risk. It is designed for banks, financial institutions, and lending platforms to automate credit risk assessment.
+##Dataset
+The dataset consists of financial and demographic attributes, including:
+Age
+Occupation
+Annual Income
+Monthly In-hand Salary
+Number of Bank Accounts
+Credit Utilization Ratio
+Outstanding Debt
+Payment Behavior
+Credit Score (Target Variable)
+The dataset is split into train.csv and test.csv for model training and evaluation.
 
-Features
+##Models Used
+**RandomForestClassifier**:
+-An ensemble method combining multiple decision trees.
+-Provides better generalization and reduces overfitting.
 
-Data preprocessing and feature engineering
+##Project Workflow
+**Data Preprocessing**:
+Dropped unnecessary columns (ID, Customer_ID, Name, SSN, Month).
+Converted numerical columns stored as objects.
+Handled missing values using mode (for categorical) and median (for numerical features).
+Feature Encoding and Scaling:
+Label encoding for categorical variables.
+Standard scaling for numerical features.
+**Model Training and Evaluation**:
+Split the data into training and testing sets.
+Trained the Random Forest Classifier.
+Evaluated performance using metrics like accuracy, precision, recall, F1-score, and ROC-AUC.
 
-Handling missing values and data cleaning
+##Dependencies
+Install the required libraries using the following command:
+pip install -r requirements.txt
 
-Model training using Random Forest Classifier
+##Requirements
+Python 3.7+
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
 
-Performance evaluation using accuracy and classification reports
-
-Installation
-
-Clone the repository:
-
-git clone https://github.com/your-username/credit-scoring-model.git
+##How to Run
+Clone this repository:
+git clone https://github.com/yourusername/credit-scoring-model.git
 cd credit-scoring-model
 
 Install dependencies:
-
 pip install -r requirements.txt
 
-Dataset
+Run the Jupyter Notebook or Python script:
+jupyter notebook "Credit Scoring Model.ipynb"
+or
+python credit_scoring_model.py
+View the evaluation metrics and model comparison in the output.
 
-The model uses two datasets:
-
-train.csv: Training dataset containing labeled credit data.
-
-test.csv: Test dataset for evaluating performance.
-
-Important Features
-
-Demographics: Age, employment status.
-
-Financial Attributes: Annual income, outstanding debt, number of loans.
-
-Credit History: Delayed payments, changed credit limit, monthly balance.
-
-Usage
-
-Load and preprocess the dataset:
-
-python preprocess.py
-
-Train the Random Forest model:
-
-python train.py
-
-Evaluate the model:
-
-python evaluate.py
-
-Make predictions on new data:
-
-python predict.py --input sample_input.csv
-
-Model Details
-
-Algorithm: Random Forest Classifier.
-
-Preprocessing:
-
-Drops irrelevant columns (ID, Customer_ID, etc.).
-
-Converts numerical columns stored as objects.
-
-Handles missing values (mode for categorical, median for numerical).
-
-Evaluation Metrics:
-
-Accuracy.
-
-Precision, Recall, F1-score.
-
-Classification report.
-
-Results
-
-The model classifies individuals into three credit score categories:
-
-Good Credit: Low risk, highly creditworthy.
-
-Average Credit: Moderate risk, further assessment required.
-
-Poor Credit: High risk, low creditworthiness.
-
-Deployment
-
-To deploy as an API:
-
-Run the Flask/FastAPI app:
-
-python app.py
-
-Send a prediction request:
-
-curl -X POST -H "Content-Type: application/json" -d '{"income": 50000, "credit_history": 2, "loan_amount": 10000}' http://localhost:5000/predict
-
+##Results
+The models were evaluated using the following metrics:
+**Accuracy**
+**Precision**
+**Recall**
+**F1-score**
+**ROC-AUC**
